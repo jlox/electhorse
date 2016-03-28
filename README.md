@@ -5,3 +5,5 @@ linkies!
 - http://www.fec.gov/disclosurep/pnational.do
 - http://www.opensecrets.org/pres16/
 - http://projects.fivethirtyeight.com/election-2016/delegate-targets/republicans/
+# goals
+- show two+ sets of info, change display on click (transitions)
