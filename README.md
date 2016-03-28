@@ -3,8 +3,6 @@ display the candidates winning-ness versus how much money they have spent on the
 
 linkies!
 - http://www.nytimes.com/interactive/2016/us/elections/election-2016-campaign-money-race.html?_r=1
-- http://www.fec.gov/disclosurep/pnational.do
-- http://www.opensecrets.org/pres16/
 - http://projects.fivethirtyeight.com/election-2016/delegate-targets/republicans/
 
 # goals
