@@ -8,3 +8,4 @@ linkies!
 # goals
 - show two+ sets of info, change display on click (transitions)
 - show who has the money, and where it came from. also hopefully show the candidates polling numbers
+- display info in a similar way to this: http://mbostock.github.io/d3/talk/20111116/bar-hierarchy.html
