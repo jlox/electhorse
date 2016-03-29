@@ -7,3 +7,4 @@ linkies!
 
 # goals
 - show two+ sets of info, change display on click (transitions)
+- show who has the money, and where it came from. also hopefully show the candidates polling numbers
