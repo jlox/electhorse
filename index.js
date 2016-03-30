@@ -2,7 +2,7 @@ var candidates = ["Hillary Clinton","Ted Cruz","Bernie Sanders","Marco Rubio","B
 
 var money = [188.0,104.2,96.3,84.6,68.0,27.3,27.3,157.6,39.5,26.0,26.0,20.6,16.7,11.0,10.0,8.8,7.1,2.1,2.0,1.2,0.8,0.4,0.2]
 
-var delegates = [1266,0,463,0,1038,0,172,0,0,0,752,0,144,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+var delegates = [1266,463,1038,172,0,752,144,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
 var party = ["d", "r", "d", "r", "r", "r", "r", "r", "r", "r", "r", "r", "r", "r", "r", "r", "d", "r", "r", "d", "d", "d", "r"]
 
@@ -65,15 +65,12 @@ d3.select(".money")
 d3.select(".d")
 .on("click",function() {
 
-	d3.select(".money")
-	.selectAll("div")
-	.data(delegates)
-	.transition()
-	.style("width",function(d) {return d * 0.8 + "px";});
+	d3.select(".money").html("");
 
 	d3.select(".money")
 	.selectAll("div")
 	.data(delegates)
+	.style("width",function(d) {return d * 0.8 + "px";})
 	.text(function(d) {return d;});
 
 	d3.select(".money")
@@ -81,20 +78,18 @@ d3.select(".d")
 	.data(candidates)
 	.append("div")
 	.text(function(d) {return d;});
-
 });
 
 d3.select(".m")
 .on("click",function() {
-
 	d3.select(".money")
-	.html("");
+	.selectAll("div")
+	.data(money)
+	.style("width",function(d) {return d * 5 + "px";})
 
 	d3.select(".money")
 	.selectAll("div")
 	.data(money)
-	.enter().append("div")
-	.style("width",function(d) {return d * 5 + "px";})
 	.text(function(d) {return d;});
 
 	d3.select(".money")
