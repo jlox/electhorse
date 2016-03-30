@@ -25,7 +25,7 @@ d3.select(".money")
 .append("div")
 .text(function(d) {return d;});
 
-d3.select("Hillary Clinton")
+d3.select("p")
 .on("click",function() {
 
 	d3.select(".money")
