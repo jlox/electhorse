@@ -70,6 +70,7 @@ d3.select(".d")
 	d3.select(".money")
 	.selectAll("div")
 	.data(delegates)
+	.enter().append("div")
 	.style("width",function(d) {return d * 0.8 + "px";})
 	.text(function(d) {return d;});
 
@@ -78,6 +79,7 @@ d3.select(".d")
 	.data(candidates)
 	.append("div")
 	.text(function(d) {return d;});
+
 });
 
 d3.select(".m")
